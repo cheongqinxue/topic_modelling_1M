@@ -54,8 +54,8 @@ def renderdf(row, container):
     container.plotly_chart(fig, use_container_width=True)
 
 def main():
-    # df_, index_df = load(st.secrets['TOPIC_URL'])
-    df_, index_df = load('processed.json')
+    df_, index_df = load(st.secrets['TOPIC_URL'])
+    # df_, index_df = load('processed.json')
     df = df_.copy(deep=True)
     gettopic = st.sidebar.text_input(label='Enter a topic number to view')
     searchword = st.sidebar.text_input(label='Enter a keyword to search')
