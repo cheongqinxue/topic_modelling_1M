@@ -1,4 +1,4 @@
 s3fs
 streamlit-wordcloud
 rapidfuzz
- plotly==5.5.0
+plotly
