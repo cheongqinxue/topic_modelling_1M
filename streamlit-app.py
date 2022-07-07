@@ -9,7 +9,7 @@ import s3fs
 FS = s3fs.S3FileSystem(anon=False)
 # import codecs as FS
 
-@st.cache
+# @st.cache
 def load(file):
     with FS.open(file) as f:
         data = json.loads(f.read())
